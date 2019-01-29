@@ -1,0 +1,5 @@
+package com.xiaomayunkeji.arcloud
+
+object C {
+    const val ar_key = "375yEt7XvsztfJ1XOMjZ2lMo8GbH7ZMLJsa5SLy6vLyL5XaLX3owPd5E7LXrLvMq4Egz9Daznt2klSdsNzvgx5b4VqjStaDD4LOHjWtRSKyXe8XxaLuvvl5NRvaSpjbtZcXLDjcGcKQGORvz9GWl9QbPlDleeIlzkF1bGI8zFBRLZ0Dhj9h5TdgDuSvRQ2LAdHepmF1I"
+}

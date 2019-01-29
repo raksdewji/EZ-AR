@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tb_head_title"
+    style="@style/toolbarStyle">
+
+    <TextView
+        android:id="@+id/tv_head_title"
+        style="@style/titleTextViewStyle" />
+
+</android.support.v7.widget.Toolbar>
