@@ -1,157 +1,157 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:2:1-33:12
-MERGED from [com.bigkoo:convenientbanner:2.0.5] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/convenientbanner-2.0.5.aar/31996505585a4366979b31cf4b96a6c8/AndroidManifest.xml:2:1-9:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/2581d32c7bfd6a26984c6177264c5fdc/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/3f927fb5ffab9925f7cef31522c044eb/AndroidManifest.xml:2:1-11:12
-MERGED from [com.zzhoujay.materialcolors:materialcolors:1.0.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/materialcolors-1.0.0.aar/b40652dd5b0b638da499517eaf51aebf/AndroidManifest.xml:2:1-12:12
-MERGED from [com.github.GrenderG:Toasty:1.3.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/Toasty-1.3.0.aar/6edd95f9be50bb933a71c4fce17a2934/AndroidManifest.xml:2:1-11:12
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/142f68c68dd3e4d7e36b7125d6c07687/AndroidManifest.xml:15:1-21:12
-MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.5] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/rxpermissions-0.9.5.aar/fc49a94efcc9eb867646609911ac6712/AndroidManifest.xml:2:1-13:12
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/75ad037404a336925c4beae4e382c6c4/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/ec599501b02af0bc1769c1930ea1504a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/4af90a17fba7350e6d9a34b8f0919c5f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/374232f917e9c2f23bfabd3eb88498cf/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/40a94ad149b9daf28c427d35915c4e98/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/f9b819934cc51f28cf83a3ed82942a8e/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e92d7a6d117d2615f5ef127fa5ef2307/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/33a7d193bf2afb3eafdc1b21f7b0670a/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/3019838e54f12da8dc923a991f1c5fdc/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/d4d2d98dfa6e135d3beb19d792d48dde/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/ad6c225b354b03f0699e7678a89a9de3/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:2:1-33:12
-INJECTED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:2:1-33:12
+ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:2:1-33:12
+MERGED from [com.bigkoo:convenientbanner:2.0.5] /home/rakheem/.gradle/caches/transforms-1/files-1.1/convenientbanner-2.0.5.aar/2fff3aa89e2e29604a0e77b694fee9e9/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ef0ace66e2149fbf92a63aa7bc91a131/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/a5bc97a5dcc00bd47e7b2a113afce69d/AndroidManifest.xml:2:1-11:12
+MERGED from [com.zzhoujay.materialcolors:materialcolors:1.0.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/materialcolors-1.0.0.aar/d17a16208a2bb01c5936f78fd9c9ca36/AndroidManifest.xml:2:1-12:12
+MERGED from [com.github.GrenderG:Toasty:1.3.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/Toasty-1.3.0.aar/43839fb827bf5911cd072c06007c8e24/AndroidManifest.xml:2:1-11:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /home/rakheem/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/77ef942965f36da317b5d66e725af62e/AndroidManifest.xml:15:1-21:12
+MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.5] /home/rakheem/.gradle/caches/transforms-1/files-1.1/rxpermissions-0.9.5.aar/89f3afecd85fca26e0f087f2dbdb3f5e/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/15edddc230b9c802c94c376a611cb662/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/60eeb4ce4b971a8129ce0bc5845a4713/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/1fba53c01229f7756732009b970ccbc4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/2f3dcf5bd37fdff4fb5e1bec98a584f5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/a98e9bad99b6c519b3ef09158470b263/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/cdce92b2eb3e7a1374cdf5058b22a753/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/b3906beb98954928a993e2b3cc1ac6d0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/890bf9d2de722507d37f6ec4d8cccb35/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/e57ca29c0d36cd8a42b9283956c2e94a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/2ec95d5769163c4964d0550adef250ea/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/4edc77b28180f9a674c3d196d254c75d/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:2:1-33:12
+INJECTED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:2:1-33:12
 	package
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:3:5-40
-		INJECTED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:3:5-40
+		INJECTED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:2:1-33:12
-		INJECTED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:2:1-33:12
+		INJECTED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:2:1-33:12
-		INJECTED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:2:1-33:12
+		INJECTED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:5:5-79
+ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:5:5-79
 	android:name
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:5:22-76
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:5:22-76
 uses-permission#android.permission.INTERNET
-ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:6:5-67
+ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:6:5-67
 	android:name
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:6:22-64
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:6:22-64
 uses-permission#android.permission.CAMERA
-ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:7:5-65
+ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:7:5-65
 	android:name
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:7:22-62
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:7:22-62
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:8:5-80
+ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:8:5-80
 	android:name
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:8:22-78
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:8:22-78
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:9:5-70
+ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:9:5-70
 	android:name
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:9:22-68
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:9:22-68
 application
-ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:10:5-31:19
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/3f927fb5ffab9925f7cef31522c044eb/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/3f927fb5ffab9925f7cef31522c044eb/AndroidManifest.xml:9:5-20
-MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.5] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/rxpermissions-0.9.5.aar/fc49a94efcc9eb867646609911ac6712/AndroidManifest.xml:11:5-20
-MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.5] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/rxpermissions-0.9.5.aar/fc49a94efcc9eb867646609911ac6712/AndroidManifest.xml:11:5-20
+ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:10:5-31:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/a5bc97a5dcc00bd47e7b2a113afce69d/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/a5bc97a5dcc00bd47e7b2a113afce69d/AndroidManifest.xml:9:5-20
+MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.5] /home/rakheem/.gradle/caches/transforms-1/files-1.1/rxpermissions-0.9.5.aar/89f3afecd85fca26e0f087f2dbdb3f5e/AndroidManifest.xml:11:5-20
+MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.5] /home/rakheem/.gradle/caches/transforms-1/files-1.1/rxpermissions-0.9.5.aar/89f3afecd85fca26e0f087f2dbdb3f5e/AndroidManifest.xml:11:5-20
 	android:supportsRtl
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:16:9-35
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:14:9-41
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:14:9-41
 	android:roundIcon
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:15:9-54
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:15:9-54
 	android:icon
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:13:9-43
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:12:9-35
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:17:9-40
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:17:9-40
 	android:name
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:11:9-28
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:11:9-28
 activity#com.xiaomayunkeji.arcloud.ui.splash.SplashActivity
-ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:18:9-25:20
+ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:18:9-25:20
 	android:theme
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:20:13-62
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:20:13-62
 	android:name
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:19:13-53
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:19:13-53
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:21:13-24:29
+ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:21:13-24:29
 action#android.intent.action.MAIN
-ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:22:17-69
+ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:22:25-66
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:23:17-77
+ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:23:27-74
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:23:27-74
 activity#com.xiaomayunkeji.arcloud.ui.main.MainActivity
-ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:26:9-28:47
+ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:26:9-28:47
 	android:theme
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:28:13-44
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:28:13-44
 	android:name
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:27:13-49
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:27:13-49
 activity#com.xiaomayunkeji.arcloud.ui.find.FindArActivity
-ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:29:9-30:15
+ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:29:9-30:15
 	android:name
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml:29:19-57
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml:29:19-57
 uses-sdk
-INJECTED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml
-INJECTED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml
-MERGED from [com.bigkoo:convenientbanner:2.0.5] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/convenientbanner-2.0.5.aar/31996505585a4366979b31cf4b96a6c8/AndroidManifest.xml:7:5-44
-MERGED from [com.bigkoo:convenientbanner:2.0.5] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/convenientbanner-2.0.5.aar/31996505585a4366979b31cf4b96a6c8/AndroidManifest.xml:7:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/2581d32c7bfd6a26984c6177264c5fdc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/2581d32c7bfd6a26984c6177264c5fdc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/3f927fb5ffab9925f7cef31522c044eb/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/3f927fb5ffab9925f7cef31522c044eb/AndroidManifest.xml:5:5-7:41
-MERGED from [com.zzhoujay.materialcolors:materialcolors:1.0.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/materialcolors-1.0.0.aar/b40652dd5b0b638da499517eaf51aebf/AndroidManifest.xml:8:5-10:41
-MERGED from [com.zzhoujay.materialcolors:materialcolors:1.0.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/materialcolors-1.0.0.aar/b40652dd5b0b638da499517eaf51aebf/AndroidManifest.xml:8:5-10:41
-MERGED from [com.github.GrenderG:Toasty:1.3.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/Toasty-1.3.0.aar/6edd95f9be50bb933a71c4fce17a2934/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.GrenderG:Toasty:1.3.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/Toasty-1.3.0.aar/6edd95f9be50bb933a71c4fce17a2934/AndroidManifest.xml:7:5-9:41
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/142f68c68dd3e4d7e36b7125d6c07687/AndroidManifest.xml:19:5-43
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/142f68c68dd3e4d7e36b7125d6c07687/AndroidManifest.xml:19:5-43
-MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.5] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/rxpermissions-0.9.5.aar/fc49a94efcc9eb867646609911ac6712/AndroidManifest.xml:7:5-9:41
-MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.5] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/rxpermissions-0.9.5.aar/fc49a94efcc9eb867646609911ac6712/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/75ad037404a336925c4beae4e382c6c4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/75ad037404a336925c4beae4e382c6c4/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/ec599501b02af0bc1769c1930ea1504a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/ec599501b02af0bc1769c1930ea1504a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/4af90a17fba7350e6d9a34b8f0919c5f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/4af90a17fba7350e6d9a34b8f0919c5f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/374232f917e9c2f23bfabd3eb88498cf/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/374232f917e9c2f23bfabd3eb88498cf/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/40a94ad149b9daf28c427d35915c4e98/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/40a94ad149b9daf28c427d35915c4e98/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/f9b819934cc51f28cf83a3ed82942a8e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/f9b819934cc51f28cf83a3ed82942a8e/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e92d7a6d117d2615f5ef127fa5ef2307/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/e92d7a6d117d2615f5ef127fa5ef2307/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/33a7d193bf2afb3eafdc1b21f7b0670a/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/33a7d193bf2afb3eafdc1b21f7b0670a/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/3019838e54f12da8dc923a991f1c5fdc/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/3019838e54f12da8dc923a991f1c5fdc/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/d4d2d98dfa6e135d3beb19d792d48dde/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/d4d2d98dfa6e135d3beb19d792d48dde/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/ad6c225b354b03f0699e7678a89a9de3/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/ad6c225b354b03f0699e7678a89a9de3/AndroidManifest.xml:20:5-44
-INJECTED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml
-INJECTED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml
+INJECTED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml
+INJECTED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml
+MERGED from [com.bigkoo:convenientbanner:2.0.5] /home/rakheem/.gradle/caches/transforms-1/files-1.1/convenientbanner-2.0.5.aar/2fff3aa89e2e29604a0e77b694fee9e9/AndroidManifest.xml:7:5-44
+MERGED from [com.bigkoo:convenientbanner:2.0.5] /home/rakheem/.gradle/caches/transforms-1/files-1.1/convenientbanner-2.0.5.aar/2fff3aa89e2e29604a0e77b694fee9e9/AndroidManifest.xml:7:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ef0ace66e2149fbf92a63aa7bc91a131/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ef0ace66e2149fbf92a63aa7bc91a131/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/a5bc97a5dcc00bd47e7b2a113afce69d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/a5bc97a5dcc00bd47e7b2a113afce69d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.zzhoujay.materialcolors:materialcolors:1.0.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/materialcolors-1.0.0.aar/d17a16208a2bb01c5936f78fd9c9ca36/AndroidManifest.xml:8:5-10:41
+MERGED from [com.zzhoujay.materialcolors:materialcolors:1.0.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/materialcolors-1.0.0.aar/d17a16208a2bb01c5936f78fd9c9ca36/AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.GrenderG:Toasty:1.3.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/Toasty-1.3.0.aar/43839fb827bf5911cd072c06007c8e24/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.GrenderG:Toasty:1.3.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/Toasty-1.3.0.aar/43839fb827bf5911cd072c06007c8e24/AndroidManifest.xml:7:5-9:41
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /home/rakheem/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/77ef942965f36da317b5d66e725af62e/AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /home/rakheem/.gradle/caches/transforms-1/files-1.1/rxandroid-2.0.2.aar/77ef942965f36da317b5d66e725af62e/AndroidManifest.xml:19:5-43
+MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.5] /home/rakheem/.gradle/caches/transforms-1/files-1.1/rxpermissions-0.9.5.aar/89f3afecd85fca26e0f087f2dbdb3f5e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.tbruyelle.rxpermissions2:rxpermissions:0.9.5] /home/rakheem/.gradle/caches/transforms-1/files-1.1/rxpermissions-0.9.5.aar/89f3afecd85fca26e0f087f2dbdb3f5e/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/15edddc230b9c802c94c376a611cb662/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/15edddc230b9c802c94c376a611cb662/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/60eeb4ce4b971a8129ce0bc5845a4713/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/60eeb4ce4b971a8129ce0bc5845a4713/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/1fba53c01229f7756732009b970ccbc4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/1fba53c01229f7756732009b970ccbc4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/2f3dcf5bd37fdff4fb5e1bec98a584f5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/2f3dcf5bd37fdff4fb5e1bec98a584f5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/a98e9bad99b6c519b3ef09158470b263/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/a98e9bad99b6c519b3ef09158470b263/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/cdce92b2eb3e7a1374cdf5058b22a753/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/cdce92b2eb3e7a1374cdf5058b22a753/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/b3906beb98954928a993e2b3cc1ac6d0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/rakheem/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/b3906beb98954928a993e2b3cc1ac6d0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/890bf9d2de722507d37f6ec4d8cccb35/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/890bf9d2de722507d37f6ec4d8cccb35/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/e57ca29c0d36cd8a42b9283956c2e94a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/e57ca29c0d36cd8a42b9283956c2e94a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/2ec95d5769163c4964d0550adef250ea/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/2ec95d5769163c4964d0550adef250ea/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/4edc77b28180f9a674c3d196d254c75d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/rakheem/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/4edc77b28180f9a674c3d196d254c75d/AndroidManifest.xml:20:5-44
+INJECTED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml
+INJECTED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml
-		ADDED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/kelvinlew/ARCloud/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml
+		ADDED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml
+		INJECTED from /home/rakheem/Programming/EZ-AR/App/ARCloud/app/src/main/AndroidManifest.xml

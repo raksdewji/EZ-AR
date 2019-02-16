@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kelvinlew/ARCloud/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
+            "outputFile": "/home/rakheem/Programming/EZ-AR/App/ARCloud/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "/Users/kelvinlew/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/2581d32c7bfd6a26984c6177264c5fdc/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "source": "/home/rakheem/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/ef0ace66e2149fbf92a63aa7bc91a131/res/values-ldltr-v21/values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

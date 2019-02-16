@@ -1,0 +1,4 @@
+#Fri Feb 15 17:47:44 MST 2019
+base.0=/home/rakheem/Programming/EZ-AR/App/ARCloud/app/build/intermediates/transforms/dexMerger/debug/5
+path.0=classes.dex
+renamed.0=classes.dex
