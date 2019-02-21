@@ -1,4 +1,0 @@
-#Fri Feb 15 17:46:00 MST 2019
-base.0=/home/rakheem/Programming/EZ-AR/App/ARCloud/app/build/intermediates/dex/release/mergeDexRelease/out
-path.0=classes.dex
-renamed.0=classes.dex
