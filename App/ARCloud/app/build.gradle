@@ -27,6 +27,14 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        splits {
+            abi {
+                enable true
+                reset()
+                include 'x86', 'armeabi-v7a'
+                universalApk true
+            }
+        }
     }
     buildToolsVersion '28.0.3'
 }
