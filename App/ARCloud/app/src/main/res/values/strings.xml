@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ARCloud</string>
+    <string name="record_buton">Record</string>
 </resources>

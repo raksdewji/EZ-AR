@@ -95,14 +95,14 @@ class MainActivity : BaseActivity() {
                 .to_ui()
                 .subscribe({ granted ->
                     if (granted) {
-                        toastS("授权成功")
+                        toastS("Permissions Success")
                         fl_preview.addView(glView, ViewGroup.LayoutParams(MATCH_PARENT, MATCH_PARENT))
                         fl_preview.addView(videoSFView)
                     } else {
-                        toastE("授权失败")
+                        toastE("Permissions Failed")
                     }
                 }, {
-                    toastE("请开启照相机,录屏,写入储存权限")
+                    toastE("Please enable permissions")
                 })
         sv_main.post {
             sv_main.startScan()
