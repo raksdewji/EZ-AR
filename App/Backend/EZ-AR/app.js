@@ -6,43 +6,16 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var SQLQuery = require('./sql.js');
 
 var app = express();
 
-// connect with PostgresSQL
-var pg = require('pg');
-
-// Database config
-var config = {
-  user:"postgres",
-  database:"postgres",
-  password:"ezar",
-  host: 'localhost',
-  port:1234,
-
-  // extended attributes
-  poolSize: 5,
-  poolIdleTimeout: 30000,
-  reapIntervalMillis: 10000
-}
-
-var pool = new pg.Pool(config);
 
 
-pool.connect(function (isErr, client, done) {
-  if (isErr) {
-    console.log('connect query:' + isErr.message);
-    return;
-  }
-  client.query('select now();', [], function (isErr, rst) {
-    done();
-    if (isErr) {
-      console.log('query error:' + isErr.message);
-    } else {
-      console.log('query success, data is: ' + rst.rows[0].now);
-    }
-  })
-});
+
+// var query = "SELECT * FROM registry;"
+//
+// SQLQuery(query);
 
 
 
@@ -63,6 +36,7 @@ app.use('/users', usersRouter);
 app.use(function(req, res, next) {
   next(createError(404));
 });
+
 
 // error handler
 app.use(function(err, req, res, next) {
