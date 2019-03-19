@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var Query = require('../query.js')
+
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
@@ -13,8 +15,18 @@ router.post('/register', function(req,res){
   var pwd = req.body.pwd;
   var veri_code = "123";
 
-  console.log(email,name,pwd);
 
-})
+  Query.register(email, name, pwd,function (status) {
+
+    if(status === 1){
+      console.log('email is: ', email,'username is:', name,'password is:', pwd);
+      res.send('Registry successfully');
+    }else {
+      res.send('Registry failed');
+    }
+
+  });
+
+});
 
 module.exports = router;
