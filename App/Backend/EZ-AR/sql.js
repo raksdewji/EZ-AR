@@ -4,11 +4,12 @@ var pg = require('pg');
 
 // Database config
 var config = {
-    user:"jianliao",
-    database:"EZ-AR",
-    password:"jianliao",
-    host: 'localhost',
-    port:1234,
+    user:"iobphfnwodostn",
+    database:"d4ff3bi33bcge9",
+    password:"97f0f8aa11c97461a5590d843b2b4215455938c721fd07c4950b464f594128c1",
+    host: "ec2-54-197-232-203.compute-1.amazonaws.com",
+    port:5432,
+    ssl: true,
 
     // extended attributes
     poolSize: 5,
