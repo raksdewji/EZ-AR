@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
-var Query = require('../query.js')
+var Query = require('../query.js');
+var crypto = require('crypto');
+var md5cryto = crypto.createHash('md5');
 
 
 /* GET users listing. */
@@ -11,15 +13,15 @@ router.get('/', function(req, res, next) {
 
 router.post('/register', function(req,res){
   var email = req.body.email;
-  var name = req.body.name;
   var pwd = req.body.pwd;
-  var veri_code = "123";
+  var md5 = md5cryto.update(pwd).digest('hex');
 
 
-  Query.register(email, name, pwd,function (status) {
+
+  Query.register(email, pwd, md5,function (status) {
 
     if(status === 1){
-      console.log('email is: ', email,'username is:', name,'password is:', pwd);
+      console.log('email is: ', email,'password is:', pwd,'md5 is:', pwd);
       res.send('Registry successfully');
     }else {
       res.send('Registry failed');
