@@ -29,6 +29,12 @@ router.post('/register', function(req,res){
 
   });
 
+  Query.login(email, md5, function (status) {
+    if(status == 1){
+      console.log('email:', email, 'md5')
+    }
+  });
+
 });
 
 module.exports = router;
