@@ -10,6 +10,10 @@ router.get('/', function(req, res, next) {
   res.render('register',{title:'Register'});
 });
 
+router.get('/login', function(req, res, next) {
+  res.render('login',{title:'Login'});
+});
+
 
 router.post('/register', function(req,res){
   var email = req.body.email;
@@ -30,8 +34,11 @@ router.post('/register', function(req,res){
   });
 
   Query.login(email, md5, function (status) {
-    if(status == 1){
-      console.log('email:', email, 'md5')
+    if(status === 1){
+      console.log('email:', email, 'password:', pwd);
+      res.send('Login success');
+    }else {
+      res.send('Login failed');
     }
   });
 

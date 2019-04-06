@@ -20,7 +20,7 @@ module.exports.register = function (email, pwd, md5, callback){
 
 module.exports.login = function (email, pwd, callback){
     var status = -1;
-    var query = "SELECT ('"+ md5 +"')  FROM registry;" //(email,username,password) VALUES ('" + email + "','" + usrname + "','"+ pwd + "');"
+    var query = "SELECT ('"+ pwd +"')  FROM registry;" //(email,username,password) VALUES ('" + email + "','" + usrname + "','"+ pwd + "');"
     SQLQuery(query,function (err,res) {
         if(err){
             status = 0;
