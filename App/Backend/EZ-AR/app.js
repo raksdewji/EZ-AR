@@ -13,11 +13,11 @@ var app = express();
 
 
 
-var query = "SELECT * FROM registry;"
-
-SQLQuery(query,function (status) {
-  
-});
+// var query = "SELECT * FROM registry;"
+//
+// SQLQuery(query,function (status) {
+//
+// });
 
 
 

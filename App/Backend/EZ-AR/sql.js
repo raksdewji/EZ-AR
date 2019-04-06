@@ -47,20 +47,6 @@ var SQLQuery = function(sql, callback){
     });
 };
 
-// var Register = function(email,usrname,pwd,status){
-//
-//     var query = "INSERT INTO registry (email,username,password) VALUES ('" + email + "','" + usrname + "','"+ pwd + "');"
-//     SQLQuery(query,function (err,res) {
-//         if(err){
-//             status=0;
-//         }else {
-//             status=1;
-//         }
-//     });
-//
-// };
-
-
 
 
 
@@ -69,11 +55,11 @@ pool.on("error", function(err, client){
 });
 
 pool.on('acquire', function (client) {
-    console.log("acquire Event")
+    //console.log("acquire Event")
 });
 
 pool.on('connect', function () {
-    console.log("connect Event")
+    //console.log("connect Event")
 });
 
 
