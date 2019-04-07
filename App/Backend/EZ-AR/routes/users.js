@@ -6,7 +6,7 @@ var md5cryto = crypto.createHash('md5');
 
 
 /* GET users listing. */
-router.get('/', function (req, res, next) {
+router.get('/register', function (req, res, next) {
     res.render('register', {title: 'Register'});
 });
 
@@ -42,12 +42,17 @@ router.post('/login', function (req, res) {
 
     Query.login(email, pwd, function (status, sqlres) {
         if (status === 1) {
-            sqlpwd=sqlres.rows[0].password;
-            console.log('email:', email, 'password:', pwd, 'query password:',sqlpwd);
-            if(pwd===sqlpwd){
-                res.send('Login success');
-            }else {
-                res.send('Login error');
+
+            if (sqlres.rows.length === 0) {
+                res.send('Account does not exist');
+            } else {
+                sqlpwd = sqlres.rows[0].password;
+                console.log('email:', email, 'password:', pwd, 'query password:', sqlpwd);
+                if (pwd === sqlpwd) {
+                    res.send('Login success');
+                } else {
+                    res.send('Password is not correct');
+                }
             }
 
         } else {

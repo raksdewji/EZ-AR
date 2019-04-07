@@ -4,11 +4,11 @@ var pg = require('pg');
 
 // Database config
 var config = {
-    user:"iobphfnwodostn",
-    database:"d4ff3bi33bcge9",
-    password:"97f0f8aa11c97461a5590d843b2b4215455938c721fd07c4950b464f594128c1",
+    user: "iobphfnwodostn",
+    database: "d4ff3bi33bcge9",
+    password: "97f0f8aa11c97461a5590d843b2b4215455938c721fd07c4950b464f594128c1",
     host: "ec2-54-197-232-203.compute-1.amazonaws.com",
-    port:5432,
+    port: 5432,
     ssl: true,
 
     // extended attributes
@@ -35,22 +35,20 @@ pool.connect(function (isErr, client, done) {
     })
 });
 
-var SQLQuery = function(sql, callback){
+var SQLQuery = function (sql, callback) {
     pool.query(sql, (err, res) => {
-        callback(err,res);
+        callback(err, res);
 
         if (err) {
-            console.log('Query error:' + err.message);
+            console.log('Query error:', err.message);
         } else {
-            console.log(res.rows);
+            console.log('Query return:', res.rows);
         }
     });
 };
 
 
-
-
-pool.on("error", function(err, client){
+pool.on("error", function (err, client) {
     console.log("error --> ", err)
 });
 
@@ -63,4 +61,4 @@ pool.on('connect', function () {
 });
 
 
-module.exports = SQLQuery ;
+module.exports = SQLQuery;
