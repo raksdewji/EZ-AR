@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var Query = require('../query.js');
+var Query = require('../actions.js');
 var crypto = require('crypto');
 var md5cryto = crypto.createHash('md5');
 
@@ -13,6 +13,7 @@ router.get('/register', function (req, res, next) {
 router.get('/login', function (req, res, next) {
     res.render('login', {title: 'Login'});
 });
+
 
 
 router.post('/register', function (req, res) {

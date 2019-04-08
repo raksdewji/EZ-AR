@@ -17,12 +17,12 @@ module.exports.register = function (email, pwd, md5, callback) {
             callback(status);
         } else {
             status = 1;
-            insertUser(email,callback);
+            insertUser(email, callback);
         }
     });
 };
 
-var insertUser = function(email, callback){
+var insertUser = function (email, callback) {
     var status = -1;
     var query = "INSERT INTO \"user\" (email) VALUES ('" + email + "');";
     SQLQuery(query, function (err, res) {
@@ -31,12 +31,12 @@ var insertUser = function(email, callback){
             callback(status);
         } else {
             status = 1;
-            getUserID(email,callback);
+            getUserID(email, callback);
         }
     });
 };
 
-var getUserID = function(email,callback){
+var getUserID = function (email, callback) {
     var status = -1;
     var query = "SELECT user_id FROM \"user\" where email='" + email + "';";
     var userID;
@@ -52,7 +52,7 @@ var getUserID = function(email,callback){
     });
 };
 
-var createProfile = function(userID,callback){
+var createProfile = function (userID, callback) {
     var status = -1;
     var query = "INSERT INTO \"profile\" (user_id) VALUES ('" + userID + "');";
     SQLQuery(query, function (err, res) {
@@ -76,7 +76,8 @@ module.exports.login = function (email, pwd, callback) {
             callback(status);
         } else {
             status = 1;
-            callback(status,res);
+            callback(status, res);
         }
     });
 };
+
