@@ -10,7 +10,7 @@ module.exports = function () {
 
 module.exports.register = function (email, pwd, md5, callback) {
     var status = -1;
-    var query = "INSERT INTO registry (email,password,md5) VALUES ('" + email + "','" + pwd + "','" + md5 + "');";
+    var query = "INSERT INTO public.registry (email,password,md5) VALUES ('" + email + "','" + pwd + "','" + md5 + "');";
     SQLQuery(query, function (err, res) {
         if (err) {
             status = 0;
@@ -24,7 +24,7 @@ module.exports.register = function (email, pwd, md5, callback) {
 
 var insertUser = function (email, callback) {
     var status = -1;
-    var query = "INSERT INTO \"user\" (email) VALUES ('" + email + "');";
+    var query = "INSERT INTO public.user (email) VALUES ('" + email + "');";
     SQLQuery(query, function (err, res) {
         if (err) {
             status = 0;
@@ -38,7 +38,7 @@ var insertUser = function (email, callback) {
 
 var getUserID = function (email, callback) {
     var status = -1;
-    var query = "SELECT user_id FROM \"user\" where email='" + email + "';";
+    var query = "SELECT user_id FROM public.user where email='" + email + "';";
     var userID;
     SQLQuery(query, function (err, res) {
         if (err) {
@@ -54,7 +54,7 @@ var getUserID = function (email, callback) {
 
 var createProfile = function (userID, callback) {
     var status = -1;
-    var query = "INSERT INTO \"profile\" (user_id) VALUES ('" + userID + "');";
+    var query = "INSERT INTO public.profile (user_id) VALUES ('" + userID + "');";
     SQLQuery(query, function (err, res) {
         if (err) {
             status = 0;
@@ -68,7 +68,7 @@ var createProfile = function (userID, callback) {
 
 module.exports.login = function (email, pwd, callback) {
     var status = -1;
-    var query = "SELECT password FROM registry where email='" + email + "';";
+    var query = "SELECT password FROM public.registry where email='" + email + "';";
 
     SQLQuery(query, function (err, res) {
         if (err) {
