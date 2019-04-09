@@ -3,6 +3,7 @@ var router = express.Router();
 var Query = require('../actions.js');
 var crypto = require('crypto');
 var Getter =  require('../getters.js');
+var Setter = require('../setters.js');
 var md5cryto = crypto.createHash('md5');
 
 
@@ -15,6 +16,14 @@ router.get('/login', function (req, res, next) {
     res.render('login', {title: 'Login'});
 });
 
+router.get('/setter', function (req, res, next) {
+    Setter.setUser(4,"Test","Canada","Alberta","Calgary",function (status,setres) {
+        if(status===1){
+            res.send("set success");
+        }
+
+    });
+});
 
 router.post('/register', function (req, res) {
     var email = req.body.email;
