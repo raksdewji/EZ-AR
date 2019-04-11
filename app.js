@@ -10,6 +10,7 @@ var SQLQuery = require('./sql.js');
 var Vimeo = require('vimeo').Vimeo;
 var getVideo = require('./routes/getVideo');
 var getters = require('./routes/getters');
+var setters = require('./routes/setters');
 var app = express();
 
 var updateDBWithVimeo = require('./routes/updateDBWithVimeo');
@@ -35,6 +36,7 @@ app.use('/users', usersRouter);
 app.use('/refreshvimeodb', updateDBWithVimeo);
 app.use('/getVideo', getVideo);
 app.use('/getters', getters);
+app.use('/setters', setters);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

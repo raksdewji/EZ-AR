@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var Vimeo = require('vimeo').Vimeo;
 var SQLQuery = require('../sql.js');
-
+var SetterMethods = require('../setters.js');
 var CLIENT_ID = "061aa02231acefde34014f76c31838b868e6b31d";
 var CLIENT_SECRET = "H+iZMclR/mysG+uiruG1nA1m3u6091YO3yF5KOu9QuWIoNuSRpUpu8G4HBp/6vyZNkc39RNMcAas8oSYwejatW3/6e9R52/knFbXsJru05STNqaTk9g/5qhHwhsLx74N";
 var ACCESS_TOKEN = "40a4aca266eba07d5b3ad1328346259a";
@@ -25,7 +25,7 @@ lib.generateClientCredentials(scope, function (err, access_token) {
 
 
 /* GET home page. */
-router.get('/:id', function(req,res, next){
+router.post('/:id', function(req,res, next){
     console.log("api call made");
     console.log(req.params.id);
     var status = -1;
@@ -34,10 +34,22 @@ router.get('/:id', function(req,res, next){
     console.log(passedInQuery);
     let itemRequested = passedInQuery[0];
     console.log(itemRequested);
-    let param_to_getter = passedInQuery[1];
-    if(itemRequested == 'getUser'){
-        console.log('getUser' + param_to_getter);
-        var query = "SELECT * FROM public.user where user_id='" + param_to_getter + "';";
+    let param_to_getter = passedInQuery.slice(1);
+
+    if(itemRequested == 'setUser'){
+        console.log('set user was requested, and the parameters are' + param_to_getter);
+        let user_id = param_to_getter[0];
+        let username = param_to_getter[1];
+        let country = param_to_getter[2];
+        let state = param_to_getter[3];
+        let city = param_to_getter[4];
+
+        SetterMethods.setUser(user_id, username, country, state, city, function(result){
+            console.log("result of calling setUser");
+            console.log(result);
+            res.send(result);
+        });
+
     }
     if(itemRequested == 'getProfile'){
         var query = "SELECT * FROM public.profile where user_id='" + param_to_getter + "';";
@@ -118,6 +130,6 @@ router.get('/:id', function(req,res, next){
 
         }
     });
-})
+});
 
 module.exports = router;
