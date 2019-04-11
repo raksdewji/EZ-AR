@@ -19,8 +19,8 @@ String.prototype.format = function () {
 //SETTERS
 
 //Example
-module.exports.setUser = function (user_id, username, country, state, city, callback) {
-    var  _username, _country, _state, _city;
+module.exports.setUser = function (user_id, username, country, state, city, email, callback) {
+    var _username, _country, _state, _city, _email;
 
     Getter.getUser(user_id, function (status, getres) {
         if (status === 0) {
@@ -32,21 +32,23 @@ module.exports.setUser = function (user_id, username, country, state, city, call
                 //return 0 means this user does not exist
                 callback(0);
             } else {
-                (!username) ? _username = getres.username : _username = username;
-                (!country) ? _country = getres.country : _country = country;
-                (!state) ? _state = getres.state : _state = state;
-                (!city) ? _city = getres.city : _city = city;
-                //Query error: insert or update on table "user" violates foreign key constraint "user_registry_email_fk"
+                (!username) ? _username = getres.rows[0].username : _username = username;
+                (!country) ? _country = getres.rows[0].country : _country = country;
+                (!state) ? _state = getres.rows[0].state : _state = state;
+                (!city) ? _city = getres.rows[0].city : _city = city;
+                (!email) ? _email = getres.rows[0].email : _email = email;
+
                 // There is one more bug. If the original attribute is NULL, then the query will input 'undefine' to the database
                 var data = {
                     username: _username,
                     country: _country,
                     state: _state,
                     city: _city,
-                    //email:_email,
-                    userid: user_id
+                    email: _email,
+                    user_id: user_id
                 };
-                var query = "UPDATE public.user SET username = '{username}', country = '{country}', state = '{state}', city = '{city}' WHERE user_id = '{userid}'".format(data);
+                var query = "UPDATE public.user SET username = '{username}', country = '{country}', state = '{state}', city = '{city}', email = '{email}' WHERE user_id = '{user_id}'".format(data);
+                console.log(query);
                 SQLQuery(query, function (err, res) {
                     if (err) {
                         //return -1 means unknown sql query error
@@ -62,109 +64,247 @@ module.exports.setUser = function (user_id, username, country, state, city, call
     });
 };
 
-module.exports.setProfile = function (userID, callback) {
-    var status = -1;
-    var query = "SELECT * FROM profile where user_id='" + userID + "';";
+module.exports.setProfile = function (user_id, birthday, profilepicture, callback) {
+    var _birthday, _profilepicture;
 
-    SQLQuery(query, function (err, res) {
-        if (err) {
-            status = 0;
-            callback(status);
-        } else {
-            status = 1;
-            callback(status, res);
+    Getter.getProfile(user_id, function (status, getres) {
+        if (status === 0) {
+            //return -1 means unknown sql query error
+            callback(-1);
+        }
+        if (status === 1) {
+            if (getres.rows.length === 0) {
+                //return 0 means this user does not exist
+                callback(0);
+            } else {
+                (!birthday) ? _birthday = getres.rows[0].birthday : _birthday = birthday;
+                (!profilepicture) ? _profilepicture = getres.rows[0].profilepicture : _profilepicture = profilepicture;
+
+                var data = {
+                    birthday: _birthday,
+                    profilepicture: _profilepicture,
+                    userid: user_id
+                };
+                var query = "UPDATE public.profile SET birthday = '{birthday}', profilepicture = '{profilepicture}' WHERE user_id = '{userid}'".format(data);
+                SQLQuery(query, function (err, res) {
+                    if (err) {
+                        //return -1 means unknown sql query error
+                        status = -1;
+                        callback(status);
+                    } else {
+                        status = 1;
+                        callback(status, res);
+                    }
+                });
+            }
         }
     });
 };
 
-module.exports.setRegistry = function (email, callback) {
-    var status = -1;
-    var query = "SELECT * FROM registry where email='" + email + "';";
+module.exports.setRegistry = function (email, password, md5, callback) {
+    var _password, _md5;
 
-    SQLQuery(query, function (err, res) {
-        if (err) {
-            status = 0;
-            callback(status);
-        } else {
-            status = 1;
-            callback(status, res);
+    Getter.getRegistry(email, function (status, getres) {
+        if (status === 0) {
+            //return -1 means unknown sql query error
+            callback(-1);
+        }
+        if (status === 1) {
+            if (getres.rows.length === 0) {
+                //return 0 means this user does not exist
+                callback(0);
+            } else {
+                (!password) ? _password = getres.rows[0].password : _password = password;
+                (!md5) ? _md5 = getres.rows[0].md5 : _md5 = md5;
+
+                var data = {
+                        password: _password,
+                        md5: _md5,
+                        email: email
+                    }
+                ;
+                var query = "UPDATE public.registry SET password = '{password}', md5 = '{md5}' WHERE email = '{email}'".format(data);
+                SQLQuery(query, function (err, res) {
+                    if (err) {
+                        //return -1 means unknown sql query error
+                        status = -1;
+                        callback(status);
+                    } else {
+                        status = 1;
+                        callback(status, res);
+                    }
+                });
+            }
         }
     });
 };
 
-module.exports.setSocialMedia = function (userID, callback) {
-    var status = -1;
-    var query = "SELECT * FROM socialmedia where user_id='" + userID + "';";
+module.exports.setSocialMedia = function (user_id, account, fb_flag, ins_flag, tw_flag, email, callback) {
+    var _account, _fb_flag, _ins_flag, _tw_flag, _email;
 
-    SQLQuery(query, function (err, res) {
-        if (err) {
-            status = 0;
-            callback(status);
-        } else {
-            status = 1;
-            callback(status, res);
+    Getter.getSocialMedia(user_id, function (status, getres) {
+        if (status === 0) {
+            //return -1 means unknown sql query error
+            callback(-1);
+        }
+        if (status === 1) {
+            if (getres.rows.length === 0) {
+                //return 0 means this user does not exist
+                callback(0);
+            } else {
+                (!account) ? _account = getres.rows[0].account : _account = account;
+                (!fb_flag) ? _fb_flag = getres.rows[0].fb_flag : _fb_flag = fb_flag;
+                (!ins_flag) ? _ins_flag = getres.rows[0].ins_flag : _ins_flag = ins_flag;
+                (!tw_flag) ? _tw_flag = getres.rows[0].tw_flag : _tw_flag = tw_flag;
+                (!email) ? _email = getres.rows[0].email : _email = email;
+
+                var data = {
+                        account: _account,
+                        fb_flag: _fb_flag,
+                        ins_flag: _ins_flag,
+                        tw_flag: _tw_flag,
+                        email: _email,
+                        user_id: user_id
+                    }
+                ;
+                var query = "UPDATE public.socialmedia SET account = '{account}', fb_flag = '{fb_flag}', ins_flag = '{ins_flag}', tw_flag = '{tw_flag}', email = '{email}' WHERE user_id = '{user_id}'".format(data);
+                SQLQuery(query, function (err, res) {
+                    if (err) {
+                        //return -1 means unknown sql query error
+                        status = -1;
+                        callback(status);
+                    } else {
+                        status = 1;
+                        callback(status, res);
+                    }
+                });
+            }
         }
     });
 };
 
-module.exports.setIdentificationPicture = function (pic_id, callback) {
-    var status = -1;
-    var query = "SELECT * FROM identification_picture where pic_id='" + pic_id + "';";
+module.exports.setIdentificationPicture = function (pic_id, link, res_id, callback) {
+    var _link, _res_id;
 
-    SQLQuery(query, function (err, res) {
-        if (err) {
-            status = 0;
-            callback(status);
-        } else {
-            status = 1;
-            callback(status, res);
+    Getter.getIdentificationPicture(pic_id, function (status, getres) {
+        if (status === 0) {
+            //return -1 means unknown sql query error
+            callback(-1);
+        }
+        if (status === 1) {
+            if (getres.rows.length === 0) {
+                //return 0 means this user does not exist
+                callback(0);
+            } else {
+                (!link) ? _link = getres.rows[0].link : _link = link;
+                (!res_id) ? _res_id = getres.rows[0].res_id : _res_id = res_id;
+
+
+                var data = {
+                        link: _link,
+                        res_id: _res_id,
+                        pic_id: pic_id
+                    }
+                ;
+                var query = "UPDATE public.identification_picture SET link = '{link}', res_id = '{res_id}' WHERE pic_id = '{pic_id}'".format(data);
+                SQLQuery(query, function (err, res) {
+                    if (err) {
+                        //return -1 means unknown sql query error
+                        status = -1;
+                        callback(status);
+                    } else {
+                        status = 1;
+                        callback(status, res);
+                    }
+                });
+            }
         }
     });
 };
 
-module.exports.setARResources = function (res_id, callback) {
-    var status = -1;
-    var query = "SELECT * FROM ar_resources where res_id='" + res_id + "';";
+module.exports.setARResources = function (res_id, link, res_type, ad_id, callback) {
+    var _link, _res_type, _ad_id;
 
-    SQLQuery(query, function (err, res) {
-        if (err) {
-            status = 0;
-            callback(status);
-        } else {
-            status = 1;
-            callback(status, res);
+    Getter.getARResources(res_id, function (status, getres) {
+        if (status === 0) {
+            //return -1 means unknown sql query error
+            callback(-1);
+        }
+        if (status === 1) {
+            if (getres.rows.length === 0) {
+                //return 0 means this user does not exist
+                callback(0);
+            } else {
+                (!link) ? _link = getres.rows[0].link : _link = link;
+                (!res_type) ? _res_type = getres.rows[0].res_type : _res_type = res_type;
+                (!ad_id) ? _ad_id = getres.rows[0].ad_id : _ad_id = ad_id;
+
+                var data = {
+                        link: _link,
+                        res_type: _res_type,
+                        ad_id: _ad_id,
+                        res_id: res_id
+                    }
+                ;
+                var query = "UPDATE public.ar_resources SET link = '{link}', res_type = '{res_type}', ad_id = '{ad_id}' WHERE res_id = '{res_id}'".format(data);
+                SQLQuery(query, function (err, res) {
+                    if (err) {
+                        //return -1 means unknown sql query error
+                        status = -1;
+                        callback(status);
+                    } else {
+                        status = 1;
+                        callback(status, res);
+                    }
+                });
+            }
         }
     });
 };
 
-module.exports.setAdvertisements = function (ad_id, callback) {
-    var status = -1;
-    var query = "SELECT * FROM advertisement where ad_id='" + ad_id + "';";
 
-    SQLQuery(query, function (err, res) {
-        if (err) {
-            status = 0;
-            callback(status);
-        } else {
-            status = 1;
-            callback(status, res);
+module.exports.setAdvertisements = function (ad_id, business_owner_userid, callback) {
+    var _link, _res_id;
+
+    Getter.getIdentificationPicture(pic_id, function (status, getres) {
+        if (status === 0) {
+            //return -1 means unknown sql query error
+            callback(-1);
+        }
+        if (status === 1) {
+            if (getres.rows.length === 0) {
+                //return 0 means this user does not exist
+                callback(0);
+            } else {
+                (!link) ? _link = getres.rows[0].link : _link = link;
+                (!res_id) ? _res_id = getres.rows[0].res_id : _res_id = res_id;
+
+
+                var data = {
+                        link: _link,
+                        res_id: _res_id,
+                        pic_id: pic_id
+                    }
+                ;
+                var query = "UPDATE public.identification_picture SET link = '{link}', res_id = '{res_id}' WHERE pic_id = '{pic_id}'".format(data);
+                SQLQuery(query, function (err, res) {
+                    if (err) {
+                        //return -1 means unknown sql query error
+                        status = -1;
+                        callback(status);
+                    } else {
+                        status = 1;
+                        callback(status, res);
+                    }
+                });
+            }
         }
     });
 };
+
 
 module.exports.setBusinessOwner = function (user_id, callback) {
-    var status = -1;
-    var query = "SELECT * FROM business_owner where user_id='" + user_id + "';";
 
-    SQLQuery(query, function (err, res) {
-        if (err) {
-            status = 0;
-            callback(status);
-        } else {
-            status = 1;
-            callback(status, res);
-        }
-    });
 };
 
 module.exports.setCard = function (card_name, callback) {

@@ -16,22 +16,32 @@ router.get('/login', function (req, res, next) {
     res.render('login', {title: 'Login'});
 });
 
-router.get('/setter', function (req, res, next) {
-    Setter.setUser(4,"Test","Canada","Alberta","Calgary",function (status,setres) {
-        if(status===1){
-            res.send("set success");
-        }
+// router.get('/setter', function (req, res, next) {
+//     Setter.setUser(4,"Test","Canada","Alberta","Calgary",null,function (status,setres) {
+//         if(status===1){
+//             res.send("set success");
+//         }
+//
+//     });
+// });
 
+router.get('/json', function (req, res, next) {
+
+    Query.getAds(function (status,sqlres) {
+        res.send(JSON.stringify(sqlres.rows));
     });
+
 });
+
 
 router.post('/register', function (req, res) {
     var email = req.body.email;
     var pwd = req.body.pwd;
+    var username =  req.body.username;
     var md5 = md5cryto.update(pwd).digest('hex');
 
 
-    Query.register(email, pwd, md5, function (status) {
+    Query.register(email,username, pwd, md5, function (status) {
 
         if (status === 1) {
             console.log('email is: ', email, 'password is:', pwd, 'md5 is:', pwd);

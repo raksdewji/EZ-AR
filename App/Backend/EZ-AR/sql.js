@@ -42,7 +42,7 @@ var SQLQuery = function (sql, callback) {
         if (err) {
             console.log('Query error:', err.message);
         } else {
-            console.log('Query return:', res.rows);
+            //console.log('Query return:', res.rows);
         }
     });
 };

@@ -8,7 +8,7 @@ module.exports = function () {
 //
 // register().then().insertUser().then().getUserID().then().createProfile()
 
-module.exports.register = function (email, pwd, md5, callback) {
+module.exports.register = function (email, username, pwd, md5, callback) {
     var status = -1;
     var query = "INSERT INTO public.registry (email,password,md5) VALUES ('" + email + "','" + pwd + "','" + md5 + "');";
     SQLQuery(query, function (err, res) {
@@ -17,14 +17,14 @@ module.exports.register = function (email, pwd, md5, callback) {
             callback(status);
         } else {
             status = 1;
-            insertUser(email, callback);
+            insertUser(email, username, callback);
         }
     });
 };
 
-var insertUser = function (email, callback) {
+var insertUser = function (email, username, callback) {
     var status = -1;
-    var query = "INSERT INTO public.user (email) VALUES ('" + email + "');";
+    var query = "INSERT INTO public.user (username, email) VALUES ('" + username + "', '" + email + "');";
     SQLQuery(query, function (err, res) {
         if (err) {
             status = 0;
@@ -69,6 +69,21 @@ var createProfile = function (userID, callback) {
 module.exports.login = function (email, pwd, callback) {
     var status = -1;
     var query = "SELECT password FROM public.registry where email='" + email + "';";
+
+    SQLQuery(query, function (err, res) {
+        if (err) {
+            status = 0;
+            callback(status);
+        } else {
+            status = 1;
+            callback(status, res);
+        }
+    });
+};
+
+module.exports.getAds = function (callback) {
+    var status = -1;
+    var query = "SELECT * FROM public.advertisement NATURAL JOIN public.ar_resources NATURAL JOIN public.identification_picture;";
 
     SQLQuery(query, function (err, res) {
         if (err) {
